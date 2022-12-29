@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TETRIS</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <div class="screen-game">
+      <canvas id="board"></canvas>
+      <div class="alert">Game Over</div>
+    </div>
+
+    <div class="side-bar">
+      <div>
+        <h1>TETRIS</h1>
+        <p>Score: <span id="score">0</span></p>
+      </div>
+
+      <div class="volume">
+        <span class="turn-on">
+          <i class='bx bxs-volume-full' ></i>
+        </span>
+        <span class="turn-off">
+          <i class='bx bx-volume' ></i>
+        </span>
+      </div>
+
+      <div class="tutorial">
+        <h3>TUTORIAL</h3>
+        <div class="tutorial-item">
+          <i class='bx bxs-up-arrow' ></i>
+          <span>rotate</span>
+        </div>
+        <div class="tutorial-item">
+          <i class='bx bxs-right-arrow' ></i>
+          <span>move right</span>
+        </div>
+        <div class="tutorial-item">
+          <i class='bx bxs-down-arrow' ></i>
+          <span>move down</span>
+        </div>
+        <div class="tutorial-item">
+          <i class='bx bxs-left-arrow' ></i>
+          <span>move left</span>
+        </div>
+      </div>
+      <button class="play-btn">Play</button>
+    </div>
+    
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

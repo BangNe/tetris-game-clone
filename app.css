@@ -1,0 +1,84 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+body {
+    background-color: #e6e6e6;
+}
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 320px 200px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.screen-game {
+    position: relative;
+}
+  
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+#board {
+    position: relative;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.play-btn-stop {
+    background-color: #ff6c3d;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+}
+
+.play-btn-stop.active {
+    display: block;
+}
+  
+.play-btn {
+    background-color: #adff2f;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.play-btn.active {
+    background-color: #ff3d3d;
+}
+
+.volume {
+    display: flex;
+}
+
+.volume span {
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.tutorial-item i{
+    font-size: 24px;
+}
+
+.alert {
+    position: absolute;
+    top: -200%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+.alert.active {
+    display: block;
+    top: 50%;
+}
